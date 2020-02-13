@@ -4,8 +4,8 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-
 html {
+  font-family: sans-serif;
   box-sizing: border-box;
 
   -moz-text-size-adjust: 100%;
@@ -16,4 +16,40 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+nav ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  background-color: #e2e2e2;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0074d9;
+}
+
+a:hover {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1 {
+    text-align: left;
+  }
+
+  nav {
+    text-align: right;
+  }
+
 }
